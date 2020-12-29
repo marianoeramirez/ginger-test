@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% block content %}
+<h3>{{ object }}</h3>
+
+<p>{{ object.summary }}</p>
+
+<ul>
+    {% for author in object.authors.all %}
+        <li>
+            <a href="{% url 'author-detail' author.pk %}">{{ author }}</a>
+        </li>
+    {% endfor %}
+</ul>
+{% endblock %}
