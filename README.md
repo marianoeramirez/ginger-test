@@ -30,8 +30,9 @@ with the limit of days to 1 with a cronjob or a celery task to keep the database
 from Arxiv.
 
 Parameters:
-    - **items_page**: allow limit how many items can be fetched by request, limit from Arxiv 30000 
-    - **limit_days**: allow limit the number of days to be fetched, the default is 6 months. 
+
+- **items_page**: allow limit how many items can be fetched by request, limit from Arxiv 30000 
+- **limit_days**: allow limit the number of days to be fetched, the default is 6 months. 
 
 Meta
 ----
